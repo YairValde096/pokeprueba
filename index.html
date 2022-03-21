@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pokédex</title>
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Press+Start+2P&family=Smooch+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <section class="banner"><h1>Pokédex</h1></section>
+    <img src="https://www.seekpng.com/png/full/236-2361549_bezel-nintendo-ds-full-device-nintendo-ds-lite.png" class="GBA">
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="./poke-shadow.png"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+</body>
+
+<!--Footer-->
+<footer>
+    <div class="text">
+        <p>Pokedex inspirada en hoenn</p>
+        <p></p>
+    </div>
+
+
+    <!--Script de javascript-->
+    <script src="./pokedex.js"></script>
+
+</footer>
+
+</html>
